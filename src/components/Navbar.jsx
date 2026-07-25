@@ -46,7 +46,7 @@ export default function Navbar() {
           </div>
           <div className="brand-logo-text">
             <span className="brand-logo-title">بريق المطابخ</span>
-            <span className="brand-logo-sub">تصميم وتصنيع المطابخ</span>
+            <span className="brand-logo-sub">تصميم وتصنيع</span>
           </div>
         </a>
 

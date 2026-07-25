@@ -337,17 +337,15 @@ body {
 }
 
 .brand-logo-title {
-  font-size: 1.35rem;
-  font-weight: 900;
+  font-size: 1.1rem;
+  font-weight: 800;
   color: var(--color-brand-dark);
-  letter-spacing: -0.01em;
 }
 
 .brand-logo-sub {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--color-accent-red);
-  letter-spacing: 0.02em;
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: var(--color-muted);
 }
 
 .nav-links {
@@ -1427,10 +1425,9 @@ textarea.form-control-custom {
 }
 
 .footer-brand-name {
-  font-size: 1.4rem;
-  font-weight: 900;
+  font-size: 1.1rem;
+  font-weight: 800;
   color: #ffffff;
-  letter-spacing: -0.01em;
 }
 
 .footer-desc {
