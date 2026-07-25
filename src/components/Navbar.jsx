@@ -37,16 +37,16 @@ export default function Navbar() {
           className="brand-logo"
           onClick={(e) => { e.preventDefault(); handleNav('#home'); }}
         >
-          <div className="brand-logo-icon">
-            {/* <ChefHat size={20} /> */}
+          <div className="brand-logo-img-wrapper">
             <img
               src={logo}
-              alt="Logo"
-              style={{ maxWidth: "120px", width: "100%", height: "auto", borderRadius: "31%" }}
-            />          </div>
+              alt="بريق المطابخ - Bareeq Kitchens"
+              className="brand-logo-img"
+            />
+          </div>
           <div className="brand-logo-text">
             <span className="brand-logo-title">بريق المطابخ</span>
-            <span className="brand-logo-sub">تصميم وتصنيع</span>
+            <span className="brand-logo-sub">تصميم وتصنيع المطابخ</span>
           </div>
         </a>
 

@@ -67,12 +67,12 @@ export default function Footer() {
 
         {/* Brand column */}
         <div>
-          <div className="d-flex align-items-center gap-2">
-            <div className="footer-brand-icon">
+          <div className="d-flex align-items-center gap-3">
+            <div className="footer-logo-img-wrapper">
               <img
                 src={logo}
-                alt="Logo"
-                style={{ maxWidth: "120px", width: "100%", height: "auto", borderRadius: "31%" }}
+                alt="بريق المطابخ - Bareeq Kitchens"
+                className="footer-logo-img"
               />
             </div>
             <span className="footer-brand-name">بريق المطابخ</span>
@@ -172,7 +172,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © {new Date().getFullYear()} المطبخ الملكي. جميع الحقوق محفوظة.
+        © {new Date().getFullYear()} بريق المطابخ. جميع الحقوق محفوظة.
       </div>
     </footer>
   );

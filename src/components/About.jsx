@@ -39,7 +39,7 @@ export default function About() {
           </h2>
 
           <p className="mt-3 text-muted-custom" style={{ fontSize: '1rem', lineHeight: 1.8 }}>
-            في <b className="text-brand-dark">المطبخ الملكي</b>، نجمع بين خبرة أكثر من 15 عامًا
+            في <b className="text-brand-dark">بريق المطابخ</b>، نجمع بين خبرة أكثر من 15 عامًا
             وأحدث تقنيات التصميم لنقدّم لك مطبخًا يعكس ذوقك ويلبي احتياجاتك اليومية.
             فريقنا من المصممين والحرفيين المتخصصين يهتم بأدق التفاصيل.
           </p>

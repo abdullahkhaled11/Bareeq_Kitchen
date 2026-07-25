@@ -293,7 +293,7 @@ body {
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.85rem;
   text-decoration: none;
   flex-shrink: 0;
 }
@@ -302,16 +302,32 @@ body {
   text-decoration: none;
 }
 
-.brand-logo-icon {
-  display: grid;
-  place-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+.brand-logo-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
   border-radius: var(--radius-xl);
-  background-color: var(--color-brand);
-  color: #fff;
-  box-shadow: var(--shadow-card);
+  background-color: #ffffff;
+  box-shadow: 0 4px 18px rgba(30, 63, 115, 0.16);
+  border: 2px solid #e2e8f4;
+  overflow: hidden;
   flex-shrink: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.brand-logo:hover .brand-logo-img-wrapper {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(30, 63, 115, 0.25);
+  border-color: var(--color-brand);
+}
+
+.brand-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.75);
 }
 
 .brand-logo-text {
@@ -321,15 +337,17 @@ body {
 }
 
 .brand-logo-title {
-  font-size: 1.1rem;
-  font-weight: 800;
+  font-size: 1.35rem;
+  font-weight: 900;
   color: var(--color-brand-dark);
+  letter-spacing: -0.01em;
 }
 
 .brand-logo-sub {
-  font-size: 0.625rem;
-  font-weight: 500;
-  color: var(--color-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-accent-red);
+  letter-spacing: 0.02em;
 }
 
 .nav-links {
@@ -501,7 +519,8 @@ body {
   margin: 0;
   font-size: clamp(2.25rem, 5vw, 3.75rem);
   font-weight: 900;
-  line-height: 1.15;
+  line-height: 1.4;
+  padding-bottom: 0.35rem;
   color: #fff;
   flex: 1;
 }
@@ -1386,21 +1405,32 @@ textarea.form-control-custom {
   }
 }
 
-.footer-brand-icon {
-  display: grid;
-  place-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+.footer-logo-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
   border-radius: var(--radius-xl);
-  background-color: #fff;
-  color: var(--color-brand);
+  background-color: #ffffff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
   flex-shrink: 0;
 }
 
+.footer-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.75);
+}
+
 .footer-brand-name {
-  font-size: 1.1rem;
-  font-weight: 800;
-  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: -0.01em;
 }
 
 .footer-desc {
