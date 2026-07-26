@@ -92,7 +92,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={loading}
-              className="btn-accent w-100 mt-4"
+              className="btn-accent w-100 contact-submit-btn"
               style={{ height: '3.5rem', fontSize: '1rem' }}
             >
               {loading ? 'جاري الإرسال...' : 'إرسال الطلب'}

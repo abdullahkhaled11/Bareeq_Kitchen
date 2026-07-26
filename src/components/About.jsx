@@ -44,14 +44,7 @@ export default function About() {
             فريقنا من المصممين والحرفيين المتخصصين يهتم بأدق التفاصيل.
           </p>
 
-          <div
-            className="mt-4"
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-              gap: '1rem',
-            }}
-          >
+          <div className="about-values-grid">
             {values.map((b) => (
               <div key={b.t} className="about-value-card">
                 <h3 className="about-value-title">{b.t}</h3>
@@ -61,7 +54,7 @@ export default function About() {
           </div>
 
           <button
-            className="btn-brand mt-4 d-inline-flex align-items-center gap-2"
+            className="btn-brand about-action-btn d-inline-flex align-items-center gap-2"
             onClick={() => scrollTo('#gallery')}
           >
             شاهد أعمالنا
