@@ -118,16 +118,16 @@ export default function ProjectDetails() {
               </div>
             )}
 
-            <div className="mt-4 d-flex flex-wrap gap-3">
+            <div className="project-actions-row d-flex flex-wrap gap-3">
               <button
-                className="btn-brand d-inline-flex align-items-center gap-2"
+                className="btn-brand project-action-btn d-inline-flex align-items-center gap-2"
                 onClick={scrollToContact}
               >
                 احصل على عرض سعر
                 <ArrowLeft size={16} />
               </button>
               <button
-                className="btn-outline-brand d-inline-flex align-items-center gap-2"
+                className="btn-outline-brand project-action-btn d-inline-flex align-items-center gap-2"
                 onClick={() => navigate('/#gallery')}
               >
                 <Home size={16} />

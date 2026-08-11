@@ -29,7 +29,7 @@ export default function ProjectCTA({ cta, onCtaClick }) {
             </p>
 
             <button
-              className="btn-white-accent mt-4 d-inline-flex align-items-center gap-2"
+              className="btn-white-accent project-cta-btn mt-4 d-inline-flex align-items-center gap-2"
               onClick={onCtaClick}
             >
               {cta.buttonText}

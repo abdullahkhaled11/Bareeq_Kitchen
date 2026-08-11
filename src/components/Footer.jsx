@@ -5,12 +5,12 @@ import { services } from './Services';
 import logo from "../assets/logo.jpg";
 
 const galleryLinks = [
-  { slug: 'modern-kitchen', label: 'مطابخ حديثة' },
-  { slug: 'classic-kitchen', label: 'مطابخ كلاسيكية' },
-  { slug: 'natural-wood-kitchen', label: 'مطابخ خشب طبيعي' },
   { slug: 'aluminium-kitchen', label: 'مطابخ ألومنيوم' },
+  { slug: 'classic-kitchen', label: 'مطابخ كلاسيك' },
+  { slug: 'natural-wood-kitchen', label: 'مطابخ خشب' },
   { slug: 'wardrobe', label: 'خزائن ملابس' },
   { slug: 'laundry-room', label: 'غرف غسيل' },
+  { slug: 'washbasins', label: 'مغاسل' },
 ];
 
 
@@ -45,17 +45,17 @@ const socialLinks = [
   },
   {
     icon: X,
-    href: 'https://x.com/ABDALLA01457901',
+    href: 'https://x.com/baykermahmoud1?s=11&t=XzTDHXZ_bx4oSiWYT0rcuQ',
     label: 'تويتر',
   },
   {
     icon: TiktokIcon,
-    href: 'https://www.tiktok.com/@elegantsawaedkitchens?_r=1&_t=ZS-97wSkjaXX1t',
+    href: 'https://www.tiktok.com/@sidarkitchene?_r=1&_t=ZS-98lmpEyCkWl',
     label: 'تيك توك',
   },
   {
     icon: MessageCircle,
-    href: 'https://wa.me/966561911054',
+    href: 'https://wa.me/966564118346',
     label: 'واتساب',
   },
 ];
@@ -71,11 +71,11 @@ export default function Footer() {
             <div className="footer-logo-img-wrapper">
               <img
                 src={logo}
-                alt="بريق المطابخ - Bareeq Kitchens"
+                alt="إبداع سيدار - Sedar Kitchens"
                 className="footer-logo-img"
               />
             </div>
-            <span className="footer-brand-name">بريق المطابخ</span>
+            <span className="footer-brand-name">إبداع سيدار</span>
           </div>
           <p className="footer-desc">
             رواد تصميم وتصنيع المطابخ العصرية في المملكة، نصنع لك مطبخًا يليق
@@ -145,26 +145,26 @@ export default function Footer() {
           <h4 className="footer-heading">تواصل معنا</h4>
           <ul className="footer-contact-list">
             <li className="footer-contact-item">
-              <a href="tel:0561911054" className="d-flex align-items-center gap-2 text-decoration-none text-white">
+              <a href="tel:0564118346" className="d-flex align-items-center gap-2 text-decoration-none text-white">
                 <Phone size={16} color="var(--color-accent-red)" style={{ flexShrink: 0 }} />
-                0561911054
+                0564118346
               </a>
             </li>
             <li className="footer-contact-item">
-              <a href="mailto:alsawadalraqia@gmail.com" className="d-flex align-items-center gap-2 text-decoration-none text-white">
+              <a href="mailto:ebdaasedar@gmail.com" className="d-flex align-items-center gap-2 text-decoration-none text-white">
                 <Mail size={16} color="var(--color-accent-red)" style={{ flexShrink: 0 }} />
-                alsawadalraqia@gmail.com
+                ebdaasedar@gmail.com
               </a>
             </li>
             <li className="footer-contact-item">
               <a
-                href="https://maps.app.goo.gl/rQvAMG2yH35SPbvK9?g_st=ic"
+                href="https://maps.app.goo.gl/3u1eKFm5uU9J8TTw7?g_st=iw"
                 target="_blank"
                 rel="noreferrer"
                 className="d-flex align-items-center gap-2 text-decoration-none text-white"
               >
                 <MapPin size={16} color="var(--color-accent-red)" style={{ flexShrink: 0, marginTop: '2px' }} />
-                الرياض، منفوحة، شارع المزرع
+                الرياض، حي منفوحة الجديدة، شارع المزرع
               </a>
             </li>
           </ul>
@@ -172,7 +172,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © {new Date().getFullYear()} بريق المطابخ. جميع الحقوق محفوظة.
+        © {new Date().getFullYear()} إبداع سيدار. جميع الحقوق محفوظة.
       </div>
     </footer>
   );

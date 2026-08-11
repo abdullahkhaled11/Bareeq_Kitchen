@@ -7,20 +7,20 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'اتصل بنا',
-    value: '0561911054',
-    href: 'tel:0561911054',
+    value: '0564118346',
+    href: 'tel:0564118346',
   },
   {
     icon: Mail,
     label: 'راسلنا',
-    value: 'alsawadalraqia@gmail.com',
-    href: 'mailto:alsawadalraqia@gmail.com',
+    value: 'ebdaasedar@gmail.com',
+    href: 'mailto:ebdaasedar@gmail.com',
   },
   {
     icon: MapPin,
     label: 'موقعنا',
-    value: 'الرياض، منفوحة، شارع المزرع',
-    href: 'https://maps.app.goo.gl/rQvAMG2yH35SPbvK9?g_st=ic',
+    value: 'الرياض، حي منفوحة الجديدة، شارع المزرع، بالقرب من مسجد الإمام مسلم',
+    href: 'https://maps.app.goo.gl/3u1eKFm5uU9J8TTw7?g_st=iw',
   },
 ];
 
@@ -126,8 +126,10 @@ export default function Contact() {
             <div className="contact-map">
               <iframe
                 title="موقعنا على الخريطة"
-                src="https://www.google.com/maps?q=السواعد+الراقية+للتجارة،+الرياض&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.0!2d46.72!3d24.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sar!2ssa!4v1700000000000!5m2!1sar!2ssa"
                 loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
               />
             </div>
           </div>

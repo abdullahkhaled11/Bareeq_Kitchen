@@ -1,6 +1,6 @@
 import { ArrowLeft, ShieldCheck, Clock, Award, Tag } from 'lucide-react';
 import { scrollTo } from '@/utils/scrollTo';
-import heroImg from '@/assets/hero-kitchen.jpg';
+import heroImg from '@/assets/hero-kitchen-new.png';
 
 export default function Hero() {
   return (
@@ -26,7 +26,7 @@ export default function Hero() {
               صمّم{' '}
               <span className="hero-title-accent">مطبخ أحلامك</span>
               <br />
-              بلمسة عصرية وأناقة لا تُقاوم
+              بفخامة عصرية وتفاصيل استثنائية
             </h1>
             <div className="hero-discount-badge">
               <div className="hero-discount-pulse" />

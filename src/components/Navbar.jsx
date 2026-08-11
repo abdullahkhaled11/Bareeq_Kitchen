@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { ChefHat, Menu, X } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 import { scrollTo } from '@/utils/scrollTo';
 import logo from "../assets/logo.jpg";
 
@@ -15,6 +16,8 @@ const navLinks = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -22,8 +25,37 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // After navigating to home with a hash, scroll to that section
+  useEffect(() => {
+    if (location.pathname === '/' && location.hash) {
+      // Small delay to let the page render first
+      setTimeout(() => {
+        const el = document.querySelector(location.hash);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 300);
+    }
+  }, [location]);
+
   const handleNav = (href) => {
-    scrollTo(href);
+    const isHome = location.pathname === '/';
+    if (isHome) {
+      scrollTo(href);
+    } else {
+      // Navigate to homepage then scroll
+      navigate('/' + href);
+    }
+    setOpen(false);
+  };
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === '/') {
+      scrollTo('#home');
+    } else {
+      navigate('/');
+    }
     setOpen(false);
   };
 
@@ -33,19 +65,19 @@ export default function Navbar() {
 
         {/* Logo */}
         <a
-          href="#home"
+          href="/"
           className="brand-logo"
-          onClick={(e) => { e.preventDefault(); handleNav('#home'); }}
+          onClick={handleLogoClick}
         >
           <div className="brand-logo-img-wrapper">
             <img
               src={logo}
-              alt="بريق المطابخ - Bareeq Kitchens"
+              alt="إبداع سيدار - Sedar Kitchens"
               className="brand-logo-img"
             />
           </div>
           <div className="brand-logo-text">
-            <span className="brand-logo-title">بريق المطابخ</span>
+            <span className="brand-logo-title">إبداع سيدار</span>
             <span className="brand-logo-sub">تصميم وتصنيع</span>
           </div>
         </a>

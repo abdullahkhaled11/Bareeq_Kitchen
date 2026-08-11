@@ -3,22 +3,22 @@
    ============================================================ */
 :root {
   /* Brand Colors */
-  --color-brand: #2d5fa5;
-  --color-brand-dark: #1e3f73;
-  --color-brand-light: #6b98d4;
-  --color-accent-red: #c0392b;
-  --color-accent-red-dark: #962d22;
+  --color-brand: #482A13;
+  --color-brand-dark: #24150A;
+  --color-brand-light: #C7B699;
+  --color-accent-red: #C7B699;
+  --color-accent-red-dark: #624F2F;
 
   /* Neutral / UI */
-  --color-bg: #ffffff;
-  --color-foreground: #1a2540;
-  --color-secondary: #f0f4fb;
-  --color-muted: #8797b2;
-  --color-border: #e2e8f4;
+  --color-bg: #F5F0E8;
+  --color-foreground: #24150A;
+  --color-secondary: #E8DDC9;
+  --color-muted: #624F2F;
+  --color-border: #C7B699;
 
   /* Shadows */
-  --shadow-soft: 0 10px 40px -12px rgba(30, 63, 115, 0.18);
-  --shadow-card: 0 4px 24px -6px rgba(30, 63, 115, 0.12);
+  --shadow-soft: 0 10px 40px -12px rgba(72, 42, 19, 0.22);
+  --shadow-card: 0 4px 24px -6px rgba(72, 42, 19, 0.15);
 
   /* Border radius */
   --radius-sm: 0.375rem;
@@ -249,10 +249,13 @@ body {
 /* ============================================================
    Section Header eyebrow badge
    ============================================================ */
+/* ============================================================
+   Section Header eyebrow badge
+   ============================================================ */
 .section-eyebrow {
   display: inline-block;
-  background-color: rgba(192, 57, 43, 0.1);
-  color: var(--color-accent-red);
+  background-color: rgba(199, 182, 153, 0.2);
+  color: var(--color-brand);
   font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -270,12 +273,12 @@ body {
   top: 0;
   z-index: 1050;
   transition: background-color 0.3s, box-shadow 0.3s;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(245, 240, 232, 0.85);
   backdrop-filter: blur(8px);
 }
 
 .site-header.scrolled {
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(245, 240, 232, 0.98);
   box-shadow: var(--shadow-card);
 }
 
@@ -310,8 +313,8 @@ body {
   height: 4rem;
   border-radius: var(--radius-xl);
   background-color: #ffffff;
-  box-shadow: 0 4px 18px rgba(30, 63, 115, 0.16);
-  border: 2px solid #e2e8f4;
+  box-shadow: 0 4px 18px rgba(72, 42, 19, 0.16);
+  border: 2px solid var(--color-secondary);
   overflow: hidden;
   flex-shrink: 0;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -319,7 +322,7 @@ body {
 
 .brand-logo:hover .brand-logo-img-wrapper {
   transform: scale(1.05);
-  box-shadow: 0 8px 24px rgba(30, 63, 115, 0.25);
+  box-shadow: 0 8px 24px rgba(72, 42, 19, 0.25);
   border-color: var(--color-brand);
 }
 
@@ -368,7 +371,7 @@ body {
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   font-weight: 600;
-  color: rgba(26, 37, 64, 0.8);
+  color: rgba(36, 21, 10, 0.85);
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
   cursor: pointer;
@@ -415,7 +418,7 @@ body {
 
 .nav-mobile-menu {
   border-top: 1px solid var(--color-border);
-  background-color: #fff;
+  background-color: #F5F0E8;
 }
 
 .nav-mobile-inner {
@@ -473,7 +476,7 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to left, rgba(30, 63, 115, 0.95) 0%, rgba(30, 63, 115, 0.75) 50%, rgba(30, 63, 115, 0.4) 100%);
+  background: linear-gradient(to left, rgba(40, 20, 8, 0.68) 0%, rgba(40, 20, 8, 0.42) 50%, rgba(40, 20, 8, 0.20) 100%);
 }
 
 .hero-inner {
@@ -490,8 +493,8 @@ body {
   align-items: center;
   gap: 0.5rem;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(199, 182, 153, 0.3);
+  background-color: rgba(199, 182, 153, 0.15);
   padding: 0.5rem 1rem;
   font-size: 0.75rem;
   font-weight: 600;
@@ -504,7 +507,7 @@ body {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: var(--color-accent-red);
+  background-color: #FFC107;
   flex-shrink: 0;
 }
 
@@ -524,7 +527,8 @@ body {
 }
 
 .hero-title-accent {
-  color: var(--color-accent-red);
+  color: #FFC107;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Heading row: title + discount badge side by side on desktop, stacked on mobile */
@@ -555,9 +559,9 @@ body {
   height: 64px;
   width: auto;
   border-radius: 1rem;
-  background: linear-gradient(135deg, #ff4d4d 0%, #ff8c00 100%);
-  box-shadow: 0 4px 20px rgba(255, 77, 77, 0.45), 0 0 0 2px rgba(255, 255, 255, 0.15);
-  color: #fff;
+  background: linear-gradient(135deg, #C7B699 0%, #624F2F 100%);
+  box-shadow: 0 4px 20px rgba(199, 182, 153, 0.45), 0 0 0 2px rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
   font-weight: 800;
   flex-shrink: 0;
   animation: badgeBounce 2.5s ease-in-out infinite;
@@ -569,7 +573,7 @@ body {
   position: absolute;
   inset: -4px;
   border-radius: 1.25rem;
-  background: linear-gradient(135deg, #ff4d4d, #ff8c00);
+  background: linear-gradient(135deg, #C7B699, #624F2F);
   opacity: 0;
   animation: pulseRing 2.5s ease-out infinite;
   z-index: -1;
@@ -732,7 +736,7 @@ body {
 .stat-value {
   font-size: 1.5rem;
   font-weight: 900;
-  color: var(--color-brand-dark);
+  color: var(--color-brand);
 }
 
 @media (min-width: 576px) {
@@ -795,7 +799,7 @@ body {
   color: #fff;
   border-radius: var(--radius-2xl);
   padding: 1.5rem;
-  box-shadow: 0 20px 40px -8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px -8px rgba(72, 42, 19, 0.3);
 }
 
 @media (min-width: 576px) {
@@ -816,7 +820,7 @@ body {
 .about-value-card {
   border-radius: var(--radius-2xl);
   border: 1px solid var(--color-border);
-  background-color: rgba(240, 244, 251, 0.4);
+  background-color: rgba(232, 221, 201, 0.4);
   padding: 1.25rem;
 }
 
@@ -869,7 +873,7 @@ body {
    Services Section
    ============================================================ */
 .services-section {
-  background-color: rgba(240, 244, 251, 0.4);
+  background-color: rgba(232, 221, 201, 0.35);
   padding: 6rem 1rem;
 }
 
@@ -927,12 +931,12 @@ body {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  background-color: rgba(45, 95, 165, 0.05);
+  background-color: rgba(72, 42, 19, 0.05);
   transition: background-color 0.3s;
 }
 
 .service-card:hover::before {
-  background-color: rgba(192, 57, 43, 0.1);
+  background-color: rgba(199, 182, 153, 0.18);
 }
 
 .service-icon {
@@ -944,11 +948,12 @@ body {
   border-radius: var(--radius-2xl);
   background-color: var(--color-brand);
   color: #fff;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .service-card:hover .service-icon {
   background-color: var(--color-accent-red);
+  color: var(--color-brand);
 }
 
 .service-title {
@@ -1013,7 +1018,7 @@ body {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(30, 63, 115, 0.9) 0%, rgba(30, 63, 115, 0.2) 50%, transparent 100%);
+  background: linear-gradient(to top, rgba(72, 42, 19, 0.95) 0%, rgba(72, 42, 19, 0.25) 50%, transparent 100%);
   opacity: 0.9;
 }
 
@@ -1057,7 +1062,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 1.5rem;
-  background: linear-gradient(135deg, var(--color-accent-red), var(--color-accent-red-dark));
+  background: linear-gradient(135deg, #482A13 0%, #50320D 100%);
   color: #fff;
   box-shadow: var(--shadow-soft);
 }
@@ -1086,7 +1091,8 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(199, 182, 153, 0.2);
+  color: #C7B699;
   padding: 0.375rem 1rem;
   border-radius: 999px;
   font-size: 0.7rem;
@@ -1105,6 +1111,7 @@ body {
 
 .offers-title-big {
   font-size: clamp(3.5rem, 8vw, 4.5rem);
+  color: #C7B699;
 }
 
 .offers-stats {
@@ -1115,7 +1122,7 @@ body {
 
 .offers-stat-card {
   border-radius: var(--radius-2xl);
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(199, 182, 153, 0.15);
   padding: 1.25rem;
   backdrop-filter: blur(4px);
 }
@@ -1123,6 +1130,7 @@ body {
 .offers-stat-value {
   font-size: 1.875rem;
   font-weight: 900;
+  color: #C7B699;
 }
 
 .offers-stat-label {
@@ -1134,7 +1142,7 @@ body {
    Testimonials Section
    ============================================================ */
 .testimonials-section {
-  background-color: rgba(240, 244, 251, 0.4);
+  background-color: rgba(232, 221, 201, 0.35);
   padding: 6rem 1rem;
 }
 
@@ -1349,7 +1357,7 @@ body {
 
 .form-control-custom:focus {
   border-color: var(--color-brand);
-  box-shadow: 0 0 0 3px rgba(45, 95, 165, 0.15);
+  box-shadow: 0 0 0 3px rgba(72, 42, 19, 0.15);
 }
 
 .form-control-custom::placeholder {
@@ -1416,7 +1424,7 @@ textarea.form-control-custom {
    Footer
    ============================================================ */
 .site-footer {
-  background-color: var(--color-brand-dark);
+  background-color: var(--color-brand);
   color: #ffffff;
   padding: 3.5rem 1rem;
 }
@@ -1457,7 +1465,7 @@ textarea.form-control-custom {
   border-radius: var(--radius-xl);
   background-color: #ffffff;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(199, 182, 153, 0.4);
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -1494,22 +1502,22 @@ textarea.form-control-custom {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: var(--radius-xl);
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(199, 182, 153, 0.18);
   color: #fff !important;
   border: none;
   text-decoration: none;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .footer-social-btn:hover {
   background-color: var(--color-accent-red);
-  color: #fff !important;
+  color: var(--color-brand) !important;
 }
 
 .footer-heading {
   font-size: 1rem;
   font-weight: 800;
-  color: #fff;
+  color: #C7B699;
   margin-bottom: 1rem;
 }
 
@@ -1576,11 +1584,11 @@ textarea.form-control-custom {
 .footer-bottom {
   max-width: 80rem;
   margin: 2.5rem auto 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(199, 182, 153, 0.2);
   padding-top: 1.5rem;
   text-align: center;
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(245, 240, 232, 0.85);
 }
 
 /* ============================================================
@@ -1630,7 +1638,7 @@ textarea.form-control-custom {
   background-color: var(--color-brand);
   color: #fff;
   text-decoration: none;
-  box-shadow: 0 8px 32px rgba(45, 95, 165, 0.4);
+  box-shadow: 0 8px 32px rgba(72, 42, 19, 0.4);
   transition: transform 0.2s;
 }
 
@@ -1643,7 +1651,7 @@ textarea.form-control-custom {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background-color: rgba(45, 95, 165, 0.6);
+  background-color: rgba(72, 42, 19, 0.6);
   z-index: -1;
   animation: ping 1.4s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
@@ -1688,9 +1696,9 @@ textarea.form-control-custom {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: rgba(199, 182, 153, 0.15);
   backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(199, 182, 153, 0.3);
   border-radius: var(--radius-xl);
   padding: 0.75rem 1.25rem;
   min-width: 7rem;
@@ -1705,7 +1713,7 @@ textarea.form-control-custom {
 
 .project-hero-stat-label {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
   margin-top: 0.2rem;
 }
 
@@ -1820,6 +1828,27 @@ textarea.form-control-custom {
   color: #fff;
 }
 
+/* Project Details Action Buttons Spacing */
+.project-actions-row {
+  margin-top: 1.75rem;
+}
+
+@media (max-width: 768px) {
+  .project-actions-row {
+    margin-top: 2.25rem !important;
+    gap: 1.25rem !important;
+  }
+
+  .project-action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .project-cta-btn {
+    margin-top: 2rem !important;
+  }
+}
+
 /* ============================================================
    Lightbox Modal
    ============================================================ */
@@ -1827,7 +1856,7 @@ textarea.form-control-custom {
   position: fixed;
   inset: 0;
   z-index: 9000;
-  background-color: rgba(10, 15, 30, 0.92);
+  background-color: rgba(36, 21, 10, 0.94);
   backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
@@ -1875,11 +1904,11 @@ textarea.form-control-custom {
 .lightbox-close {
   top: -1rem;
   right: -1rem;
-  background-color: rgba(192, 57, 43, 0.85);
+  background-color: rgba(72, 42, 19, 0.85);
 }
 
 .lightbox-close:hover {
-  background-color: var(--color-accent-red);
+  background-color: var(--color-brand-dark);
 }
 
 .lightbox-prev {
@@ -1922,16 +1951,16 @@ textarea.form-control-custom {
   height: 3.75rem;
   border-radius: 50%;
   background: var(--color-accent-red);
-  color: #ffffff;
+  color: var(--color-brand);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2;
-  box-shadow: 0 4px 20px rgba(227, 26, 34, 0.4);
+  box-shadow: 0 4px 20px rgba(199, 182, 153, 0.45);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .gallery-card:hover .video-play-badge {
   transform: translate(-50%, -50%) scale(1.15);
-  background: #ff2a34;
+  background: #E8DDC9;
 }

@@ -31,6 +31,7 @@ import laundry4     from '@/assets/laundry-user-4.jpg';
 import laundry5     from '@/assets/laundry-user-5.jpg';
 import laundry6     from '@/assets/laundry-user-6.jpg';
 import workshop     from '@/assets/workshop.jpg';
+import washbasinsImg from '@/assets/washbasins.png';
 
 // User's Uploaded Images from src/assets/Images
 import img1 from '@/assets/Images/photo_2026-07-15_00-09-18.jpg';
@@ -416,6 +417,61 @@ const projects = [
       title: 'حوّل غرفة الغسيل إلى مساحة منظمة وعملية',
       desc: 'تصميم مجاني ومعاينة بالمنزل — تواصل معنا الآن.',
       buttonText: 'طلب تصميم مجاني',
+    },
+  },
+
+  /* ───────────────────────── 7. مغاسل فاخرة ────────────────────────── */
+  {
+    id: 7,
+    slug: 'washbasins',
+    category: 'مغاسل فاخرة',
+    title: 'المغاسل والمرايا الفاخرة',
+    subtitle: 'تصاميم مغاسل مودرن وكلاسيك مصنوعة من أجود أنواع الرخام والأخشاب المقاومة للمياه',
+    heroImage: washbasinsImg,
+    gallery: [washbasinsImg, img1, img2, img3, img4, img5],
+    additionalGallery: [img6, img7, img8, washbasinsImg],
+    videos: [mainVid1, mainVid2],
+    description:
+      'نصمم ونصنع مغاسل رخامية وخشبية فاخرة تناسب المجالس والدورات والمداخل بكافة المقاسات، مع لمسات إضاءة LED مدمجة وأحواض رخام طبيعي مصممة خصيصاً لمساحتك.',
+    features: [
+      {
+        iconName: 'Sparkles',
+        title: 'رخام طبيعي وفخم',
+        desc: 'أحواض وأسطح مصنوعة من أجود أنواع الرخام والكوارتز المقاوم للبقع.',
+      },
+      {
+        iconName: 'Shield',
+        title: 'مقاومة تامة للمياه',
+        desc: 'معالجة كاملة للأخشاب بمواد إيطالية مضادة للرطوبة والمياه.',
+      },
+      {
+        iconName: 'Lightbulb',
+        title: 'إضاءة مرايا ذكية',
+        desc: 'مرايا مجهزة بإضاءة LED مخفية ولمسات تصميمية عصرية.',
+      },
+      {
+        iconName: 'Settings',
+        title: 'تفصيل حسب المقاس',
+        desc: 'تصميم مخصص 100% يناسب مساحتك وديكور منزلك.',
+      },
+    ],
+    specifications: [
+      { label: 'المادة', value: 'رخام طبيعي + خشب معالج ضد المياه' },
+      { label: 'الأحواض', value: 'رخام مصمت أو سيراميك إسباني' },
+      { label: 'المرايا', value: 'مرايا بلجيكية بإضاءة LED ذكية' },
+      { label: 'الإكسسوارات', value: 'خلاطات ذهبية/سوداء مقاومة للصدأ' },
+      { label: 'التشطيب', value: 'دهان PU عالي الجودة' },
+      { label: 'ضمان', value: '10 سنوات' },
+    ],
+    stats: [
+      { value: '+250', label: 'مغسلة منفذة' },
+      { value: '100%', label: 'رخام فاخر' },
+      { value: '10', label: 'سنوات ضمان' },
+    ],
+    cta: {
+      title: 'صمم مغسلة فاخرة تعكس فخامة منزلك',
+      desc: 'تواصل معنا للحصول على تصميم مجاني وعرض سعر مخصص.',
+      buttonText: 'طلب تصميم مغسلة',
     },
   },
 ];

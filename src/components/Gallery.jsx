@@ -5,20 +5,20 @@
  */
 import { Link } from 'react-router-dom';
 import SectionHeader from './SectionHeader';
-import k1 from '@/assets/kitchen-1.jpg';
-import k2 from '@/assets/kitchen-2.jpg';
-import k3 from '@/assets/kitchen-3.jpg';
-import k4 from '@/assets/kitchen-4.jpg';
+import alumImg from '@/assets/kitchen-4.jpg';
+import classicImg from '@/assets/kitchen-2.jpg';
+import woodImg from '@/assets/kitchen-3.jpg';
 import wardrobeImg from '@/assets/wardrobe.png';
 import laundryImg from '@/assets/laundry.png';
+import washbasinsImg from '@/assets/washbasins.png';
 
 const gallery = [
-  { src: k1,          title: 'مطابخ حديثة',        tag: 'مشروع مكتمل', slug: 'modern-kitchen' },
-  { src: k2,          title: 'مطابخ كلاسيكية',      tag: 'مشروع مكتمل', slug: 'classic-kitchen' },
-  { src: k3,          title: 'مطابخ خشب طبيعي',     tag: 'مشروع مكتمل', slug: 'natural-wood-kitchen' },
-  { src: k4,          title: 'مطابخ ألومنيوم',       tag: 'مشروع مكتمل', slug: 'aluminium-kitchen' },
-  { src: wardrobeImg, title: 'خزائن ملابس',          tag: 'مشروع مكتمل', slug: 'wardrobe' },
-  { src: laundryImg,  title: 'غرف غسيل',             tag: 'مشروع مكتمل', slug: 'laundry-room' },
+  { src: alumImg,       title: 'مطابخ ألومنيوم', tag: 'تصاميم عصرية',  slug: 'aluminium-kitchen' },
+  { src: classicImg,    title: 'مطابخ كلاسيك',   tag: 'أناقة لا تنتهي', slug: 'classic-kitchen' },
+  { src: woodImg,       title: 'مطابخ خشب',     tag: 'خشب طبيعي',   slug: 'natural-wood-kitchen' },
+  { src: wardrobeImg,   title: 'خزائن ملابس',    tag: 'تنظيم راقي',   slug: 'wardrobe' },
+  { src: laundryImg,    title: 'غرف غسيل',       tag: 'حلول متكاملة', slug: 'laundry-room' },
+  { src: washbasinsImg, title: 'مغاسل',          tag: 'رخام ومرايا',  slug: 'washbasins' },
 ];
 
 export default function Gallery() {
