@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { scrollTo } from '@/utils/scrollTo';
-import logo from "../assets/logo.jpg";
+import logo from "../assets/new-logo.jpeg";
 
 const navLinks = [
   { href: '#home', label: 'الرئيسية' },

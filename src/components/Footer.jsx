@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { ChefHat, Phone, Mail, MapPin, Instagram, MessageCircle, X } from 'lucide-react';
 import { scrollTo } from '@/utils/scrollTo';
 import { services } from './Services';
-import logo from "../assets/logo.jpg";
+import logo from "../assets/new-logo.jpeg";
 
 const galleryLinks = [
   { slug: 'aluminium-kitchen', label: 'مطابخ ألومنيوم' },
@@ -164,7 +164,7 @@ export default function Footer() {
                 className="d-flex align-items-center gap-2 text-decoration-none text-white"
               >
                 <MapPin size={16} color="var(--color-accent-red)" style={{ flexShrink: 0, marginTop: '2px' }} />
-                الرياض، حي منفوحة الجديدة، شارع المزرع
+                ابداع سيدار للتجارة، 4351 الطريق الدائري الجنوبي الفرعي، المصانع، 7983، الرياض 14711
               </a>
             </li>
           </ul>

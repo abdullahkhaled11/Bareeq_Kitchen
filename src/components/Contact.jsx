@@ -19,7 +19,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'موقعنا',
-    value: 'الرياض، حي منفوحة الجديدة، شارع المزرع، بالقرب من مسجد الإمام مسلم',
+    value: 'ابداع سيدار للتجارة، 4351 الطريق الدائري الجنوبي الفرعي، المصانع، 7983، الرياض 14711',
     href: 'https://maps.app.goo.gl/3u1eKFm5uU9J8TTw7?g_st=iw',
   },
 ];
@@ -123,10 +123,19 @@ export default function Contact() {
               );
             })}
 
-            <div className="contact-map">
+            <div className="contact-map" style={{ position: 'relative' }}>
+              <a 
+                href="https://maps.app.goo.gl/3u1eKFm5uU9J8TTw7?g_st=iw" 
+                target="_blank" 
+                rel="noreferrer"
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 10 }}
+                title="فتح في خرائط جوجل"
+              >
+                <span className="visually-hidden">فتح الموقع في خرائط جوجل</span>
+              </a>
               <iframe
                 title="موقعنا على الخريطة"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.0!2d46.72!3d24.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sar!2ssa!4v1700000000000!5m2!1sar!2ssa"
+                src="https://maps.google.com/maps?q=الرياض، حي منفوحة الجديدة، شارع المزرع&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen
