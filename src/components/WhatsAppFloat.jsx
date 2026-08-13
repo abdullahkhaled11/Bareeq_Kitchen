@@ -5,7 +5,7 @@ export default function WhatsAppFloat() {
     <>
       {/* WhatsApp Floating Button (Right) */}
       <a
-        href="https://wa.me/966564118346"
+        href="https://wa.me/966509781753"
         target="_blank"
         rel="noreferrer"
         aria-label="تواصل عبر الواتساب"
@@ -17,7 +17,7 @@ export default function WhatsAppFloat() {
 
       {/* Phone Call Floating Button (Left) */}
       <a
-        href="tel:0564118346"
+        href="tel:0509781753"
         aria-label="اتصال هاتفي"
         className="phone-float"
       >

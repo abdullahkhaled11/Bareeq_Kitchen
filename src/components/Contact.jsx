@@ -7,8 +7,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'اتصل بنا',
-    value: '0564118346',
-    href: 'tel:0564118346',
+    value: '0509781753',
+    href: 'tel:0509781753',
   },
   {
     icon: Mail,

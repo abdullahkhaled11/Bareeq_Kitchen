@@ -55,7 +55,7 @@ const socialLinks = [
   },
   {
     icon: MessageCircle,
-    href: 'https://wa.me/966564118346',
+    href: 'https://wa.me/966509781753',
     label: 'واتساب',
   },
 ];
@@ -145,9 +145,9 @@ export default function Footer() {
           <h4 className="footer-heading">تواصل معنا</h4>
           <ul className="footer-contact-list">
             <li className="footer-contact-item">
-              <a href="tel:0564118346" className="d-flex align-items-center gap-2 text-decoration-none text-white">
+              <a href="tel:0509781753" className="d-flex align-items-center gap-2 text-decoration-none text-white">
                 <Phone size={16} color="var(--color-accent-red)" style={{ flexShrink: 0 }} />
-                0564118346
+                0509781753
               </a>
             </li>
             <li className="footer-contact-item">
