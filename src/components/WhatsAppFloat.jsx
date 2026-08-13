@@ -14,7 +14,7 @@ export default function WhatsAppFloat() {
         <MessageCircle size={28} />
         <span className="whatsapp-ping" />
       </a>
-
+      {/* s */}
       {/* Phone Call Floating Button (Left) */}
       <a
         href="tel:0509781753"
@@ -27,3 +27,4 @@ export default function WhatsAppFloat() {
     </>
   );
 }
+// test
