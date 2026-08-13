@@ -1,4 +1,4 @@
-import { Hammer, Sparkles, Wrench, DoorClosed, Droplets } from 'lucide-react';
+import { Hammer, Wrench, DoorClosed, Droplets } from 'lucide-react';
 import SectionHeader from './SectionHeader';
 
 const services = [
@@ -7,11 +7,7 @@ const services = [
     title: 'تفصيل مطابخ خشب وألومنيوم',
     desc: 'تصنيع وتفصيل مطابخ بأجود خامات الخشب والألومنيوم بأيدي حرفيين محترفين.',
   },
-  {
-    icon: Sparkles,
-    title: 'تجديد المطابخ',
-    desc: 'إعادة إحياء وتحديث مطبخك القديم بلمسات عصرية مبهرة وأقل تكلفة.',
-  },
+
   {
     icon: Wrench,
     title: 'التركيب والصيانة',
